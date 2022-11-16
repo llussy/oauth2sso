@@ -26,10 +26,7 @@
         <div class="col align-self-center mt-4 border-right">
           <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item">
-              <a class="nav-link active" id="password-tab" data-toggle="tab" href="#tabPassword" role="tab" aria-controls="password" aria-selected="true">密码登录</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" id="mobile-tab" data-toggle="tab" href="#tabMobile" role="tab" aria-controls="mobile" aria-selected="false">手机验证码(待开发...)</a>
+              <a class="nav-link active" id="password-tab" data-toggle="tab" href="#tabPassword" role="tab" aria-controls="password" aria-selected="true">LDAP 登录</a>
             </li>
           </ul>
           <div class="tab-content" id="myTabContent" style="margin-top:30px">
@@ -70,7 +67,7 @@
         </div>
         <div class="col align-self-center mt-4">
           <ul class="list-unstyled">
-            <li><strong>{{.Client.Name}}</strong> 将获得访问您以下资源的权限：
+            <li><strong>{{.Client.Name}}</strong> will get permission：
               <ul style="font-size: 13px;margin-top: 10px;">
                 {{range .Scope}} 
                   <li>{{.Title}}</li>
